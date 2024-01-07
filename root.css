@@ -1,0 +1,79 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* The root where we can declare some reusable css variables. */
+:root {
+  --main-color: #4CAF50;
+  --main-font-size: 16px;
+  --main-padding: 8px 12px;
+  --main-margin: 5px;
+
+}
+.outer{
+  display: flex;
+  width: 320px;
+  padding: 8px 12px;
+  align-items: center;
+  gap: 4px;
+  border-radius: 2px;
+  border: 1px solid var(--Gray-gray-5, #D9D9D9);
+  background: var(--Gray-gray-1, #FFF);
+}
+.inner{
+  flex: 1 0 0;
+  color: var(--Gray-gray-7, #8C8C8C);
+/* Regular / 16px | 24px */
+  height: auto;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  border:none;
+}
+.icon{
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+.btn {
+  background-color: var(--main-color);
+  font-size: var(--main-font-size);
+  padding: var(--main-padding);
+  margin: var(--main-margin);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.input-field {
+  padding-left: 50px;
+  padding: var(--main-padding);
+  margin: var(--main-margin);
+  font-size: var(--main-font-size);
+  display: flex;
+  width: 274px;
+
+}
+
+.input-field:hover {
+  background-color: #f0f0f0;
+}
+
+.input-field:focus {
+  border-color: var(--main-color);
+}
+
+.loading {
+  background: url('loading.gif') no-repeat right;
+}
+
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
